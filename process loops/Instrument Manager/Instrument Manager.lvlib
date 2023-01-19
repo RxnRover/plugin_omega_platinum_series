@@ -12,4 +12,5 @@
 	<Item Name="Close Instrument Safely.vi" Type="VI" URL="../../../SubVIs/Close Instrument Safely.vi"/>
 	<Item Name="Error Handler - Instrument Manager Loop.vi" Type="VI" URL="../Error Handler - Instrument Manager Loop.vi"/>
 	<Item Name="Instrument Manager Loop.vi" Type="VI" URL="../../Instrument Manager Loop.vi"/>
+	<Item Name="Restart VISA Resource.vi" Type="VI" URL="../Restart VISA Resource.vi"/>
 </Library>
