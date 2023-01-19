@@ -15,7 +15,7 @@
 		<Item Name="Omega Platinum Series Plugin.lvlib" Type="Library" URL="../Omega Platinum Series Plugin.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
-				<Item Name="Omega Platinum Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Omega Platinum Series/Omega Platinum Series.lvlib"/>
+				<Item Name="Omega Platinum Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/driver_omega_platinum_series/Omega Platinum Series.lvlib"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Dynamic Reentrant.lvlib" Type="Library" URL="/&lt;userlib&gt;/Dynamic Reentrant/Dynamic Reentrant.lvlib"/>
