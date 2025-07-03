@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-01-09 11:03:47" Modified_Date="2025-07-03 10:20:14" Creator="zachc" Comments="" ID="85355816380002c19ab629cc3139c574">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-01-09 11:03:47" Modified_Date="2025-07-03 13:59:31" Creator="zachc" Comments="" ID="9b3f20698717520efcc4ad038b82a9af">
   <Library_General_Settings>
     <Package_File_Name>Rxn_Rover_lib_Omega_Platinum_Series_Plugin</Package_File_Name>
-    <Library_Version>1.0.2.3</Library_Version>
+    <Library_Version>1.0.2.4</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\vipm_package_builds</Library_Output_Folder>
@@ -123,16 +123,10 @@
         <Namespace/>
       </Namespace_Overrides>
       <Exclusions>
-        <Path>build</Path>
-      </Exclusions>
-      <Exclusions>
         <Path>.gitignore</Path>
       </Exclusions>
       <Exclusions>
         <Path>Omega Platinum Series Plugin.lvproj</Path>
-      </Exclusions>
-      <Exclusions>
-        <Path>VERSION.txt</Path>
       </Exclusions>
       <Place_Folder_Contents>
         <Path/>
