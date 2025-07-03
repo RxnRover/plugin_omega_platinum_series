@@ -1,6 +1,6 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="20008000">
-	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -12,18 +12,13 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="LICENSE.txt" Type="Document" URL="../LICENSE.txt"/>
 		<Item Name="Omega Platinum Series Plugin.lvlib" Type="Library" URL="../Omega Platinum Series Plugin.lvlib"/>
-		<Item Name="plugin.conf" Type="Document" URL="../plugin.conf"/>
-		<Item Name="plugin_omega_platinum_series.vipb" Type="Document" URL="../plugin_omega_platinum_series.vipb"/>
-		<Item Name="plugin_omega_platinum_series.vipc" Type="Document" URL="../plugin_omega_platinum_series.vipc"/>
-		<Item Name="README.md" Type="Document" URL="../README.md"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
-				<Item Name="Omega Platinum Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/RxnRover/OmegaPlatinumSeriesDriver/Omega Platinum Series.lvlib"/>
+				<Item Name="Omega Platinum Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Omega Platinum Series/Omega Platinum Series.lvlib"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
-				<Item Name="Dynamic Reentrant.lvlib" Type="Library" URL="/&lt;userlib&gt;/RxnRover/DynamicReentrant/Dynamic Reentrant.lvlib"/>
+				<Item Name="Dynamic Reentrant.lvlib" Type="Library" URL="/&lt;userlib&gt;/Dynamic Reentrant/Dynamic Reentrant.lvlib"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
@@ -71,7 +66,7 @@
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="Standalone - EXE" Type="EXE">
+			<Item Name="Standalone" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{C89B5D30-ABCE-408D-9B79-6C8C0BEB9F80}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{310B7DB3-4E40-4D04-AD00-34022D6A36FD}</Property>
@@ -80,26 +75,26 @@
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{E8A4E191-EF01-4B07-9FFB-1D34E9326140}</Property>
 				<Property Name="Bld_buildSpecDescription" Type="Str">Builds a standalone EXE for the temperature control panel.</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Standalone - EXE</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Standalone</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../build/OmegaPlatinumSeries</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../build/Standalone</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{C532961E-D017-49B9-B337-2E39F49895B0}</Property>
-				<Property Name="Bld_version.build" Type="Int">9</Property>
+				<Property Name="Bld_version.build" Type="Int">6</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">OmegaPlatinumSeries.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../build/OmegaPlatinumSeries/OmegaPlatinumSeries.exe</Property>
+				<Property Name="Destination[0].destName" Type="Str">Omega Control Panel.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../build/Standalone/Omega Control Panel.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../build/OmegaPlatinumSeries/data</Property>
+				<Property Name="Destination[1].path" Type="Path">../build/Standalone/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{8DA65FAD-D739-43E0-A930-B374CBFB0467}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{25FBFFD7-4A08-498F-8920-A7E1A4728B48}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Omega Platinum Series Plugin.lvlib/Main.vi</Property>
@@ -107,11 +102,11 @@
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Stand-alone executable build for the temperature control panel.</Property>
-				<Property Name="TgtF_internalName" Type="Str">Standalone - EXE</Property>
+				<Property Name="TgtF_internalName" Type="Str">Standalone</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2019 </Property>
 				<Property Name="TgtF_productName" Type="Str">Omega Control Panel</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{FE665471-92C8-4B70-A4E2-675CAEC47AEC}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">OmegaPlatinumSeries.exe</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Omega Control Panel.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>
